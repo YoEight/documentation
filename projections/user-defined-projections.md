@@ -29,6 +29,8 @@ fromStream('account-1')
 })
 .transformBy(function(state){
 	state.count = 10;
+	
+	return state;
 })
 .outputState()
 ```
